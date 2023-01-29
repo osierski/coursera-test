@@ -20,14 +20,12 @@
 
             var matesCount = 0;
             for (var i = 0; i < mates.length; i++) {
-                console.log('-' + mates[i].trim() + '-; ');
                 if (mates[i].trim().length > 0) {
                     matesCount++;
                 }
             }
 
-            console.log('--' + matesCount + '-- ');
-            if (matesCount = 0) {
+            if (matesCount == 0) {
                 $scope.checkResult = messageNoMates;
             } else {
                 if (matesCount <= maxLunchMates) {
